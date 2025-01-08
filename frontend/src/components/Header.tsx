@@ -401,6 +401,10 @@ const Header = ({
 
                 <Button onClick={() => navigate('/')} className="logo">BookCars</Button>
 
+                <Button onClick={() => navigate('/agriculture')} className="logo">Agricultural</Button>
+                <Button onClick={() => navigate('/drone')} className="logo">Commercial</Button>
+
+
                 {!env.isMobile && headerTitle && <div className="header-title">{headerTitle}</div>}
               </>
             )}

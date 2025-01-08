@@ -19,6 +19,10 @@ const Activate = lazy(() => import('@/pages/Activate'))
 const ForgotPassword = lazy(() => import('@/pages/ForgotPassword'))
 const ResetPassword = lazy(() => import('@/pages/ResetPassword'))
 const Home = lazy(() => import('@/pages/Home'))
+
+const Agricultural = lazy(() => import('@/pages/Agricultural'))
+const Commercial = lazy(() => import('@/pages/Commercial'))
+
 const Search = lazy(() => import('@/pages/Search'))
 const Checkout = lazy(() => import('@/pages/Checkout'))
 const CheckoutSession = lazy(() => import('@/pages/CheckoutSession'))
@@ -54,6 +58,7 @@ const App = () => (
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/reset-password" element={<ResetPassword />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/agriculture" element={<Agricultural />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/checkout-session/:sessionId" element={<CheckoutSession />} />
